@@ -27,7 +27,7 @@
 <h2>Add a Comment:</h2>
 <%= form_for([@article, @article.comments.build]) do |f| %>
     <p>
-        <%= f.label :User %> <br>
+        <%= f.label :commenter %> <br>
         <%= f.text_field :commenter %>
     </p>
 
@@ -42,4 +42,7 @@
 <% end %>
 
 <%= link_to 'Back', articles_path %>  |
-    <%= link_to 'Edit', edit_article_path(@article) %>
+|    <%= link_to 'Edit', edit_article_path(@article) %>
+
+
+# Pendiente revisar codigo en el renderizad.
