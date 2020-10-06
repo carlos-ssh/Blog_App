@@ -1,7 +1,20 @@
-<h1>New Post</h1>
-
 <%= form_for :article, url: articles_path do |f| %>
+    <% if @article.errors.any? %>
+        <div id="error_explanation">
+            <h2>
+                <%= pluralize(@article.errors.count, "error") %> Prohibited this article from being saved: 
+            </h2>  
+            <ul> 
+                <%= @article.errors.full_messages.each do |msg| %> 
+                <li>
+                    <%= msg %>
+                </li>
+                <% end %>
+            </ul>
+        </div>   
+    <% end %>
 
+<h1>New Post</h1>
     <p>
         <%= f.label :title %> <br>
         <%= f.text_field :title %>
