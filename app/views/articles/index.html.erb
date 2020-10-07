@@ -7,7 +7,7 @@
         <th colspan="3"></th>
     </tr>
 
-    <%= @articles.each do |article| %>
+    <% @articles.each do |article| %>
         <tr>
             <td> <%= article.title%> </td>
             <td> <%= article.text%> </td>
@@ -17,4 +17,5 @@
                                         method: :delete, data: { confirm: 'Are You Sure?' } %> </td>
         </tr>
     <% end %>
-</table>
+</table> <br>
+<%= link_to 'Back', articles_path %>
