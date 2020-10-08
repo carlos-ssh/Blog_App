@@ -13,8 +13,6 @@
 <%= render @article.comments %>
 
 <h2>Add a Comment:</h2>
-<%= render "comments/form" %>
-
 <%= form_for([@article, @article.comments.build]) do |f| %>
     <p>
         <%= f.label :commenter %><br>
