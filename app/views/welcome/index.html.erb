@@ -1,4 +1,7 @@
-<h1>Blog App</h1>
-<p>Welcome to Blog App! This is your spot... Feel free.</p> <br>
-
-<%= link_to 'My Blog', controller: 'articles' %>
+<div class="container bg-secondary rounded-pill">
+    <h1 class="mt-5 font-weight-bold text-white pl-5 py-3">Blog App</h1>
+    <p class="mt-3 text-center text-white-50">Welcome to Blog App! This is your spot... Feel free.</p> <br>
+    <div class="btn btn-danger text-decoration-none">
+        <%= link_to 'My Blog', {:class => "btn text-white"}, controller: 'articles' %>
+    </div>
+</div>
