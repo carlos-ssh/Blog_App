@@ -10,12 +10,12 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="container">
-    <% flash.each do |key, value| %>
-      <div class="notification <%= flash_class(key) %>">
-        <%= value %>
-      </div>
-    <% end %>
-    <%= yield %>
+  <body class="">
+    <%= render "navigation/navigation" %>
+    
+    <div class="container">
+      <%= render "common/flash_messages" %>
+      <%= yield %>
+    </div>
   </body>
 </html>
