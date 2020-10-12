@@ -11,6 +11,11 @@
   </head>
 
   <body class="container">
+    <% flash.each do |key, value| %>
+      <div class="notification <%= flash_class(key) %>">
+        <%= value %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
