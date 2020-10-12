@@ -1,4 +1,4 @@
-en:
+es:
   helpers:
     submit:
       user:
@@ -6,4 +6,4 @@ en:
   users:
     new:
       form:
-    errors: "oops!!.. Something went wrong. Please verify your Information"
+    error: "oops!!.. Something went wrong. Please verify your Information"

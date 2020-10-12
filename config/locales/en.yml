@@ -30,4 +30,11 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  helpers:
+    submit:
+      user:
+        create: "Save #{model}"
+  users:
+    new:
+      form:
+    error: "oops!!.. Something went wrong. Please verify your Information"

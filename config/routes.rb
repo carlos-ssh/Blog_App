@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+  get 'sessions/create'
+  get 'sessions/destroy'
   get 'post/index'
   get 'welcome/index'
   root :to => "welcome#index"
