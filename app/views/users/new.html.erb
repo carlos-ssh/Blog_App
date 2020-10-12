@@ -1,1 +1,28 @@
-<h1>Va un Formulario en esta plantilla</h1>
+<%= form_for @user do |f| %>
+<div class="field">
+    <%= f.label :name, class: 'label' %>
+    <div class="control">
+        <%= f.text_field :name, class: 'input' %> <br>
+    </div>
+</div>
+<div class="field">
+    <%= f.label :email, class: 'label' %>
+    <div class="control">
+        <%= f.text_field :email, class: 'input' %><br>
+    </div>
+</div>
+<div class="field">
+    <%= f.label :password, class: 'label' %>
+    <div class="control">
+        <%= f.password_field :password, class: 'input' %><br>
+    </div>
+</div>
+<div class="field">
+    <%= f.label :password_confirmation, class: 'label'%>
+    <div class="control">
+        <%= f.password_field :password_confirmation, class: 'input'  %><br>
+    </div>
+</div>
+    <%= f.submit "Submit", disable_with: 'Submiting...', class: 'button is-primary'%><br>
+
+<% end %>
