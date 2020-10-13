@@ -1,19 +1,15 @@
 class ArticlesController < ApplicationController
-    #http_basic_authenticate_with name: "Charly", password: "secret", except: [:index, :show]
 
     def new
         @article = Article.new
     end
 
     def create
-        #render plain: params[:article].inspect
-        @article = Article.new(article_params)
-
+    @article = current_user.articles.new article_params
         if @article.save
-            redirect_to root_url, notice: 'Article was successfully created.'
-        else
-            render 'new'
+        r   eturn redirect_to root_url, notice: 'Article was successfully created.'
         end
+    render :new
     end
 
     def edit
@@ -32,7 +28,7 @@ class ArticlesController < ApplicationController
         @article = Article.find(params[:id])
 
         if @article.update(article_params)
-                redirect_to @article
+            redirect_to @article
         else
             render 'edit'
         end
