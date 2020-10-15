@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   get 'figures/index'
   get 'figures/new'
   get 'figures/create'
@@ -10,9 +9,7 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   get 'logout', to: 'sessions#destroy'
-  #Users
-  resource :users, only:[:new, :create]
 
-  #Articles
-  resource :articles
+  resource :users, only: [:new, :create]
+  resource :figures
 end

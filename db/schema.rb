@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_10_044738) do
+ActiveRecord::Schema.define(version: 2020_10_15_145055) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -28,8 +28,19 @@ ActiveRecord::Schema.define(version: 2020_10_10_044738) do
     t.index ["article_id"], name: "index_comments_on_article_id"
   end
 
+  create_table "figures", force: :cascade do |t|
+    t.string "title"
+    t.string "text"
+    t.string "photo"
+    t.integer "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_figures_on_user_id"
+  end
+
 # Could not dump table "users" because of following StandardError
 #   Unknown type 'digest' for column 'password'
 
   add_foreign_key "comments", "articles"
+  add_foreign_key "figures", "users"
 end
