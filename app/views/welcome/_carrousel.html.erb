@@ -113,4 +113,25 @@
           </div>
         </div>
       </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+      <script>
+
+        import bulmaCarousel from '../../../node_modules/bulma-carousel/dist/js/bulma-carousel.min.js';
+        
+        bulmaCarousel.attach('#carousel-demo', {
+          slidesToScroll: 1,
+          slidesToShow: 4
+        });
+
+      </script>
 </section>
+
+        // Initialize all elements with carousel class.
+        const carousels = bulmaCarousel.attach('.carousel', options);
+
+        // To access to bulmaCarousel instance of an element
+        const element = document.querySelector('#my-element');
+        if (element && element.bulmaCarousel) {
+          // bulmaCarousel instance is available as element.bulmaCarousel
+        }
