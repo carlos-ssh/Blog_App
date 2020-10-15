@@ -1,2 +1,26 @@
-<h1>Figures#index</h1>
-<p>Find me in app/views/figures/index.html.erb</p>
+<div class="container">
+  <h1 class="title has-text-centered has-text-weight-bold is-size-1 has-text-primary">Articles</h1>  
+  <div class="columns is-desktop is-multiline">
+    <% @figures.each do |figure| %>
+      <div class="card column is-4">
+        <div class="card-image">
+          <% if figure.photo.attached? %>
+            <figure class="image is-4by3">
+              <%= image_tag(url_for()) %>
+            </figure>
+          <% end %>
+        </div>
+
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4 has-text-centered "> <%= link_to( figure.title, figure_path(figure) ) %> </p>
+              <p class="subtitle is-6 has-text-justify"> <%= figure.text %> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+

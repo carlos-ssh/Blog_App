@@ -1,0 +1,8 @@
+<h1 class="title"> <%= @figure.title %> </h1>
+
+<figure class="image is-128x128">
+  <%= image_tag(url_for( @figure.photo )) %>
+</figure>
+  <div class="container">
+    <%= @figure.text %>
+  </div>

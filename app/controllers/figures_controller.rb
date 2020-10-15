@@ -1,5 +1,10 @@
 class FiguresController < ApplicationController
   def index
+    @figures = Figure.all
+  end
+
+  def show
+    @figure = Figure.find params[:id]
   end
 
   def new
@@ -8,7 +13,7 @@ class FiguresController < ApplicationController
 
   def create
     @figure = current_user.figures.new figure_params
-    if @item.valid? && @figure.save
+    if @figure.save
       return redirect_to root_url, notice: 'Article Created Successfully.'
     end
     render :new
