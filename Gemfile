@@ -28,6 +28,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-rails'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+# Pagy
+gem 'pagy', '~> 3.8', '>= 3.8.3'
 #sass
 gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 # Reduces boot times through caching; required in config/boot.rb
