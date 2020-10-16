@@ -1,5 +1,5 @@
 <% flash.each do |key, value| %>
-    <div class="notification" <%= flash_class(key) %> >
+    <div class="notification is-danger" <%= flash_class(key) %> >
         <%= value %>
     </div>
 <% end %>

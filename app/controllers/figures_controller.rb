@@ -1,6 +1,7 @@
 class FiguresController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :create]
   def index
-    @figures = Figure.all
+    @pagy, @figures = pagy(Figure.all, items: 9)
   end
 
   def show
@@ -20,9 +21,17 @@ class FiguresController < ApplicationController
   end
 
   def edit
+    @figure = Figure.find params[:id]
   end
 
   def update
+    @figure = Figure.find params[:id]
+
+    if @figure.update figure_params
+      return redirect_to @figure, notice: 'Figure Updated!'
+    end
+
+    render :edit
   end
 
   private
