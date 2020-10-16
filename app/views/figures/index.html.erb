@@ -13,14 +13,16 @@
 
         <div class="card-content">
           <div class="media">
-            <div class="media-content">
-              <p class="title is-4 has-text-centered "> <%= link_to( figure.title, figure_path(figure) ) %> </p>
-              <p class="subtitle is-6 has-text-justify"> <%= figure.text %> </p>
+            <div class="media-content has-text-centered">
+              <p class="title is-4"> <%= link_to( figure.title, figure_path(figure) ) %> </p>
             </div>
           </div>
         </div>
+        <div class="has-text-centered">
+          <%= link_to( 'See More', figure_path(figure), class: 'button is-primary' ) %>
+        </div>
+
       </div>
     <% end %>
   </div>
 </div>
-
