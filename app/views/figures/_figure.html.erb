@@ -1,0 +1,21 @@
+      <div class="card column is-4">
+        <div class="card-image">
+          <% if figure.photo.attached? %>
+            <figure class="image is-4by3">
+              <%= image_tag(url_for()) %>
+            </figure>
+          <% end %>
+        </div>
+
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content has-text-centered">
+              <p class="title is-4"> <%= link_to( figure.title, figure_path(figure) ) %> </p>
+            </div>
+          </div>
+        </div>
+        <div class="has-text-centered">
+          <%= link_to( 'See More', figure_path(figure), class: 'button is-primary' ) %>
+        </div>
+
+      </div>
