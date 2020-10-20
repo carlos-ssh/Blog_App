@@ -2,7 +2,7 @@
         <div class="card-image">
           <% if figure.photo.attached? %>
             <figure class="image is-4by3">
-              <%= image_tag(url_for()) %>
+              <%= image_tag(url_for(figure.photo)) %>
             </figure>
           <% end %>
         </div>

@@ -1,3 +1,4 @@
 class Image < ApplicationRecord::Base
-    mount_uploader :picture, PictureUploader
+    mount_uploader :photo, PictureUploader
+    belongs_to :photo, class_name: "photo", foreign_key: "photo_id"
 end

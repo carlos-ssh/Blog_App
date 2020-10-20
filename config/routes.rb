@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create]
   resources :figures
+  resources :images
 end
 =begin
   get 'figures/index'

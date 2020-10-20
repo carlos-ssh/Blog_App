@@ -1,7 +1,7 @@
 <h1 class="title has-text-centered has-text-weight-bold is-size-1 has-text-primary"> <%= @figure.title %> </h1>
 
-<figure class="image is-528x328">
-  <%= image_tag figure.first.image_url.to_s %>
+<figure class="image is-228x228">
+  <%= image_tag(url_for(@figure.photo)) %>
 </figure>
 <div class="container">
   <%= @figure.text %>
