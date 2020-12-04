@@ -1,6 +1,6 @@
 class ImagesController < ApplicationController
   
-  def new
-    
+  def show
+    @photo = Figure.find params[:id]
   end
 end
