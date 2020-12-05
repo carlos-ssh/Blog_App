@@ -5,13 +5,15 @@ ruby '2.7.1'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'postgresql', '~> 1.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 
 group :development, :test do
   gem 'rspec-rails', ">= 3.9.0"
   gem 'rubocop', require: false
-  gem 'sqlite3'
+  #gem 'sqlite3'
+  gem 'pg'
 end
 
 group :production do
