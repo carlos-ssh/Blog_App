@@ -1,0 +1,43 @@
+<%= form_for @user, builder: BulmaFormBuilder do |f| %>
+
+    <%= f.form_error %>
+
+    <div class="field">
+        <%= f.label :name, class: 'label' %>
+        <div class="control">
+            <%= f.text_field :name, class: 'input' %>
+        </div>
+
+        <%= f.field_error :name %>
+    </div>
+
+    <div class="field">
+        <%= f.label :email, class: 'label' %>
+        <div class="control">
+            <%= f.text_field :email, class: 'input' %>
+        </div>
+
+        <%= f.field_error :email %>
+    </div>
+
+    <div class="field">
+        <%= f.label :password, class: 'label' %>
+        <div class="control">
+            <%= f.password_field :password, class: 'input' %>
+        </div>
+
+        <%= f.field_error :password %>
+    </div>
+
+    <div class="field">
+        <%= f.label :password_confirmation, class: 'label'%>
+        <div class="control">
+            <%= f.password_field :password_confirmation, class: 'input'  %>
+        </div>
+        
+        <%= f.field_error :password %>
+    </div>
+
+        <%= f.submit "Submit", disable_with: 'Submiting...', class: 'button is-primary'%><br>
+
+<% end %>
