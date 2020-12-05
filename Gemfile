@@ -5,6 +5,7 @@ ruby '2.7.1'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'postgresql', '~> 1.0'
+gem 'pg'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 
@@ -15,7 +16,7 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg'
+  #gem 'pg'
 end
 
 # Use Puma as the app server
