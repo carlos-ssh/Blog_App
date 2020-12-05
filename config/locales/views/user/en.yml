@@ -1,0 +1,9 @@
+es:
+  helpers:
+    submit:
+      user:
+        create: "Save #{model}"
+  users:
+    new:
+      form:
+    error: "oops!!.. Something went wrong. Please verify your Information"
