@@ -8,9 +8,9 @@ gem 'mini_magick'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'rspec-rails', ">= 3.9.0"
   gem 'rubocop', require: false
-  gem 'sqlite3'
 end
 
 group :production do
