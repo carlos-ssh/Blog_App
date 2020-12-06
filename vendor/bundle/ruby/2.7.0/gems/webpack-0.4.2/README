@@ -1,0 +1,15 @@
+NAME
+  webpack.rb
+
+SYNOPSIS
+
+INSTALL
+  gem install webpack
+
+URI
+  http://github.com/ahoward/webpack
+
+DESCRIPTION
+
+USAGE
+  see lib/webpack.rb and test/webpack_test.rb
