@@ -13,7 +13,6 @@ group :development, :test do
   gem 'rspec-rails', ">= 3.9.0"
   gem 'rubocop', require: false
   #gem 'sqlite3'
-  gem 'pg'
 end
 
 group :production do

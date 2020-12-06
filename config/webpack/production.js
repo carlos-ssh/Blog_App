@@ -6,4 +6,3 @@ module.exports = environment.toWebpackConfig()
 
 warnings: true
 
-NODE_ENV=production RAILS_ENV=production rails assets:precompile --trace
