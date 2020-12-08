@@ -91,6 +91,8 @@ GEM
     erubi (1.10.0)
     eventmachine (1.2.7)
     ffi (1.13.1)
+    font-awesome-sass (4.7.0)
+      sass (>= 3.2)
     formatador (0.2.5)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -232,6 +234,11 @@ GEM
     ruby-vips (2.0.17)
       ffi (~> 1.9)
     rubyzip (2.3.0)
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
@@ -296,6 +303,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   carrierwave
+  font-awesome-sass (~> 4.6, >= 4.6.2)
   guard-livereload (~> 2.5)
   jbuilder (~> 2.7)
   jquery-rails
