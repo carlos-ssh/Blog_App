@@ -1,0 +1,9 @@
+<% if cookies[:saved_subscriber] %>
+  Thanks for Sign Up!
+  <% else %>
+    <% form_for @subscriber do |f| %>
+      <p>Subscribe to Receive Latest Updates in Your Email</p>
+      <%= f.email_field :email, placeholder: "Email" %>
+      <%= f.submit "Submit", disable_with: 'Submiting...' %>
+  <% end %>
+<% end %>

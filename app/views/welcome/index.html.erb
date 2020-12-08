@@ -1,9 +1,11 @@
 <div class="container">
-    <p class="has-text-weight-bold is-size-4 mt-3">Welcome to Blog App! This is your spot... Feel free.</p> <br>
+    <p class="has-text-weight-bold has-text-centered is-size-4 mt-5">Welcome to Blog App! This is your spot... Feel free.</p> <br>
     
-    <%= image_tag ("https://images.pexels.com/photos/717988/pexels-photo-717988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=450&w=740"), class: "img-responsive"%>
+    <div class="img-responsive image is-2by2">
+        <%= image_tag ("https://images.pexels.com/photos/717988/pexels-photo-717988.jpeg?auto=compress"), class: "img-responsive"%>
+    </div>
     
     <div class="container has-text-centered">
-        <%= link_to('Last Articles', figures_path, class: 'button is-primary is-large mb-5') %>
+        <%= link_to('Last Articles', figures_path, class: "button is-primary is-large p-4 m-3") %>
     </div>
 </div>
