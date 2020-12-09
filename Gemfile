@@ -13,7 +13,6 @@ gem 'postgresql', '~> 1.0'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 
 group :development, :test do
-  gem 'sqlite3'
   gem 'rspec-rails', ">= 3.9.0"
   gem 'rubocop', require: false
 end
