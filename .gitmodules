@@ -1,0 +1,3 @@
+[submodule "webpacker"]
+	path = webpacker
+	url = https://github.com/rails/webpacker.git
