@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.1'
+ruby '2.7.2'
 gem 'carrierwave'
 gem 'mini_magick'
 
@@ -13,6 +13,8 @@ gem 'postgresql', '~> 1.0'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 
 gem 'pry', '~> 0.13.1'
+gem 'sassc', '~> 2.4.0'
+gem 'nokogiri', '~> 1.10', '>= 1.10.10'
 
 group :development, :test do
   gem 'rspec-rails', ">= 3.9.0"
