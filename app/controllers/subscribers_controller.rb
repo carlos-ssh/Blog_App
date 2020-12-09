@@ -9,7 +9,7 @@ class SubscribersController < ApplicationController
       cookies[:saved_lead] = true
       redirect_to root_path, notice: "You're Subscribed!"
     else
-      redirect_to root_path, notice: "Something went wrong. Please check your Email"
+      redirect_to root_path, notice: "Something went wrong. Please check your Email Address"
     end
   end
 
