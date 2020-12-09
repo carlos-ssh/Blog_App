@@ -12,6 +12,8 @@ gem 'postgresql', '~> 1.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 
+gem 'pry', '~> 0.13.1'
+
 group :development, :test do
   gem 'rspec-rails', ">= 3.9.0"
   gem 'rubocop', require: false
