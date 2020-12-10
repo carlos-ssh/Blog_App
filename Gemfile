@@ -6,7 +6,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 
 gem 'font-awesome-sass', '~> 4.6', '>= 4.6.2'
-
+gem 'bundler'
 gem 'postgresql', '~> 1.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
